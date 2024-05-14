@@ -1,0 +1,78 @@
+Admin
+
+Post Method
+http://localhost:9995/admin/insert
+{
+"adminId":1,
+ "username":"Manish",
+ "password":"value",
+ "address":"india",
+ "mobileNumber":893607242,
+ "email":"man@gmail.com"
+}
+
+{
+"adminId":2,
+ "username":"manu",
+ "password":"access1",
+ "address":"india",
+ "mobileNumber":77823840,
+ "email":"verma@gmail.com"
+}
+
+Customer
+
+Get Method
+http://localhost:9995/Customer/delete/1
+
+Cab
+http://localhost:9995/Cab/getdetails/3
+
+Driver
+
+Get Method
+http://localhost:9995/driver/getbestdrivers
+
+
+Trip booking
+
+Post Method
+http://localhost:9995/TripBooking/insert
+{
+    "tripBookingId":1,
+    "customerId":1,
+    "driverId":4,
+    "fromLocation":"rajajingar",
+    "toLocation":"malleswaram",
+    "fromLocalDateTime":"2020-12-31T15:53:16",
+    "toLocalDateTime":"2021-01-24T15:53:16",
+    "status":false,
+    "distanceInKm":6.0,
+    "bill":34553.0,
+    "customer":{
+    "customerId": 1,
+    "username": "sachin",
+    "password": "sach@1134bc",
+    "address": "12,bangalore",
+    "mobileNumber": 1234545667,
+    "email": "sac123@gmail.com"
+    },
+     "driver":{
+ "driverId":4,
+ "licenceNo":"uk1234",
+ "rating":4.6,
+ "username":"dheeraj",
+ "password":"jaree",
+ "address":"12,andhra",
+ "mobileNumber":8734545690,
+ "email":"dhv@gmail.com",
+ "cab":{
+ "cabId":3,
+ "carType":"hundai",
+ "perKmRate":13.4
+}
+}
+}
+
+
+
